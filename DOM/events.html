@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button ondblclick="fun()"></button>
+    <button onmouseenter="fun()">Click me</button>
+    <button onmouseleave="fun()">Click me</button>
+    <button onmousemove="fun()">Click me</button>
+    <input type="text" onkeydown="fun1(event)">
+    <input type="text" onkeyup="fun1(event)">
+    <form action="">
+        <input type="text" onchange="funnn(event)" onFocus="fun2(event)" onblur="funn(event)">
+    </form>
+    <script>
+        function fun(){
+            alert("Hello Welcome")
+        }
+        function fun1(){
+            console.log(event)
+            // console.log(event.target.value)
+            console.log(event.target)
+        }
+        function fun2(event){
+            event.target.style.padding="20px";
+            event.target.style.border="2px solid black";
+            event.target.style.backgroundColor="red";
+        }
+        function funnn(event){
+            alert(event.target.value)
+        }
+        function funn(event){
+            event.target.style.padding="o";
+            event.target.style.border="1px solid";
+            event.target.style.backgroundColor="white";
+        }
+        
+    </script>
+</body>
+
+</html>

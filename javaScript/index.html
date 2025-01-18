@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>How does js work</h1>
+    <script>
+        var a=10;
+        console.log(a);
+        var b="sonu";
+        function add(a,b){
+            var sum=a+b;
+            function triple(t){
+                var thrice=t*t*t;
+                return thrice;
+            }
+            return sum;
+        }
+        var result=add(a,b);
+        console.log(result);
+    </script>
+</body>
+</html>
