@@ -1,0 +1,15 @@
+.cont{
+    background-color: aqua;
+    border: 2px solid red;
+}
+#he{
+    color: red;
+    text-decoration:line-through;
+}
+.jio{
+    width: 250px;
+    border:2px solid yellowgreen;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    word-wrap: normal;
+}

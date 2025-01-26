@@ -28,5 +28,5 @@ data.then((result)=>{
 
 async function generateJoke(){
 const response= await fetch("https://official-joke-api.appspot.com/random_joke")
-const joson=
+const joson="";
 }

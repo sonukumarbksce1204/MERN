@@ -1,0 +1,30 @@
+const [name,setName]=useState("")
+    const [email,setEmail]=useState("")
+    const [pass,setPass]=useState("")
+    const [condition,setCondition]=useState(false)
+    function handleSubmit(e){
+        e.preventDefault();
+        setCondition(true);
+    }
+    return (
+        <div>
+            <form onSubmit={handelSubmit}>
+                <input type="text" placeholder='Enter Username'
+                value={name} onChange={(event)=>{console.log(event.target.value)}}/><br/><br/>
+                <input type="email" placeholder='Enter email'
+                value={email}/><br/><br/>
+                <input type="password" placeholder='Enter Password'
+                value={pass}/><br/><br/>
+                <input type="submit" value="create"/>
+                {condition&&(
+                    <div>
+                        <h1>My name is</h1>
+                        <h1>My Email is</h1>
+                        <h1>My pass is</h1>
+                    </div>
+                    
+                )}
+            </form>
+
+        </div>
+    )

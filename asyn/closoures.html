@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Closure Example</h1>
+    <script>
+        function add(){
+            let count=0;
+            function inner(){
+                console.log(count);
+            }
+            inner();
+        }
+        add()
+    </script>
+</body>
+</html>
