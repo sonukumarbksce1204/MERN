@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bitcoin Application</h1>
+    <div id="main"></div>
+    <script>
+        var data=fetch("https://api.coinlore.net/api/tickers/");
+        data.then((result)=>{
+            return result.json()
+        }).then((response)=>{
+            console.log(response.data);
+            response.data.map((item,index)=>
+            document.getElementById("main").innerHTML+=`
+            <h2>Bitcoin name: ${item.name}(${item.symbol})</h2>
+            <h2>Bitcoin price: ${item.price_usd}</h2>
+            <br/>
+            `
+        )
+        }).catch((error)=>{
+            document.getElementById("main").innerHTML="error"
+        })
+    </script>
+</body>
+</html>
